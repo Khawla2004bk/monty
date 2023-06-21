@@ -4,8 +4,8 @@ int status = 0;
 
 /**
  * main - Entry point
- * @av: list of arguments passed to our program
- * @ac: amount of args
+ * @arv: list of arguments passed to our program
+ * @arc: amount of args
  */
 
 int main(int arc, char **arv)

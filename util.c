@@ -3,6 +3,7 @@
 /**
  * isdig - checks if a string is a digit
  * @str: string to check
+ * Return: 0 or 1
  */
 int isdig(char *str)
 {
@@ -22,6 +23,7 @@ int isdig(char *str)
 /**
  * isnum - checks if a string is a number
  * @str: provided string
+ * Return: 0 or 1
  */
 int isnum(char *str)
 {
