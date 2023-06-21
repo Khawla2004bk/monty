@@ -96,7 +96,6 @@ size_t printstk(const stack_t *s);
 
 void fileer(char *av);
 void erusage(void);
-int status = 0;
 
 int isdig(char *str);
 int isnum(char *str);
