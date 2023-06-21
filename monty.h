@@ -1,6 +1,8 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#define  _POSIX_C_SOURCE 200810L
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -92,8 +94,12 @@ stack_t *queue(stack_t **s, const int nod);
 void freestk(stack_t *s);
 size_t printstk(const stack_t *s);
 
-int isdigit(char *str);
-int isnumber(char *str);
+void fileer(char *av);
+void erusage(void);
+int status = 0;
+
+int isdig(char *str);
+int isnum(char *str);
 
 void op_code(stack_t **s, char *str, unsigned int cnt);
 
