@@ -12,11 +12,10 @@ void pchar(stack_t **s, unsigned int cnt)
 		fprintf(stderr, "L%d: can't pchar, stack empty\n", cnt);
 		exit(EXIT_FAILURE);
 	}
-	if (isascii((*s)->n) == 0)
+	if ((*s)->n < 0 || (*s)->n > 127)
 	{
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", cnt);
 		exit(EXIT_FAILURE);
 	}
 	printf("%c\n", (*s)->n);
 }
-
